@@ -14,7 +14,6 @@ module.exports = {
 			'@docusaurus/plugin-client-redirects',
 			{
 				createRedirects: function (existingPath) {
-					console.log(existingPath);
 					if (existingPath === '/docs/newDocPath2') {
 						return ['/docs/oldDocPath2'];
 					}
@@ -39,11 +38,7 @@ module.exports = {
 					// Please change this to your repo.
 					editUrl:
 						'https://github.com/albertnotes/docusaurus-blog/edit/master/',
-					postsPerPage: 3,
-					feedOptions: {
-						type: 'all',
-						copyright: `Copyright © ${new Date().getFullYear()} Albert, All rights reserved.`,
-					},
+					postsPerPage: 5,
 					blogSidebarCount: 'ALL',
 					blogSidebarTitle: 'All our posts',
 				},
@@ -57,7 +52,7 @@ module.exports = {
 	themeConfig: {
 		hideableSidebar: true,
 		colorMode: {
-			defaultMode: 'dark',
+			defaultMode: 'light',
 			disableSwitch: false,
 			respectPrefersColorScheme: true,
 		},
@@ -71,7 +66,7 @@ module.exports = {
 		// 	contextualSearch: true,
 		// },
 		navbar: {
-			hideOnScroll: true,
+			hideOnScroll: false,
 			title: 'AlbertNotes',
 			logo: {
 				alt: 'My Site Logo',
@@ -79,12 +74,7 @@ module.exports = {
 			},
 			items: [
 				{ to: '/tags', label: 'Tags', position: 'left' },
-				{
-					to: 'docs/',
-					activeBasePath: 'docs',
-					label: 'Docs',
-					position: 'left',
-				},
+				{ to: '/docs', label: 'Docs', position: 'left' },
 				{
 					href: 'https://github.com/albertnotes/docusaurus-blog',
 					position: 'right',
@@ -95,35 +85,27 @@ module.exports = {
 		},
 		footer: {
 			style: 'light',
-			// links: [
-			// 	{
-			// 		title: 'Docs',
-			// 		items: [
-			// 			{
-			// 				label: 'Style Guide',
-			// 				to: 'docs/',
-			// 			},
-			// 			{
-			// 				label: 'Second Doc',
-			// 				to: 'docs/doc2/',
-			// 			},
-			// 		],
-			// 	},
-			// 	{
-			// 		title: 'More',
-			// 		items: [
-			// 			{
-			// 				label: 'Tags',
-			// 				to: '/tags',
-			// 			},
-			// 			{
-			// 				label: 'GitHub',
-			// 				href: 'https://github.com/albertnotes',
-			// 			},
-			// 		],
-			// 	},
-			// ],
-			copyright: `Copyright © ${new Date().getFullYear()} Albert, All rights reserved.`,
+			links: [
+				{
+					title: 'Docs',
+					items: [
+						{
+							label: 'Style Guide',
+							to: '/docs/markdown/style-guide',
+						},
+					],
+				},
+				{
+					title: 'Community',
+					items: [
+						{
+							label: 'GitHub',
+							href: 'https://github.com/albertnotes',
+						},
+					],
+				},
+			],
+			copyright: `Copyright © ${new Date().getFullYear()} Albert,  Built with Docusaurus.`,
 		},
 	},
 };

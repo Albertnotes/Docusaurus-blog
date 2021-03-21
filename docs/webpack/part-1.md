@@ -5,7 +5,6 @@ sidebar_label: 基礎
 slug: /
 ---
 
-文件 : [https://webpack.js.org/](https://webpack.js.org/)
 Webpack 前端打包工具(提供模組化開發模式)
 
 ## 環境
@@ -25,6 +24,7 @@ nvm version
 ## 開始前套件
 
 ```
+npm init -y
 npm install webpack webpack-cli --save-dev
 ```
 
@@ -163,9 +163,10 @@ module.exports = {
 該套件可以讀取純 css 、則 style-loader 提供 JS import
 :::
 
-### extract-text-webpack-plugi
+### extract-text-webpack-plugin
 
-舊版套件，僅為了未來可能遇到故留檔
+舊版套件，僅為了未來可能遇到故留檔。
+適用產出獨立的 css
 
 [Github](https://github.com/webpack-contrib/extract-text-webpack-plugin)
 
@@ -178,7 +179,57 @@ npm 需要安裝 `npm install --save-dev extract-text-webpack-plugin@next`
 ### mini-css-extract-plugin
 
 [Github](https://github.com/webpack-contrib/mini-css-extract-plugin)
+適用產出獨立的 css
 
 ```
 npm install --save-dev mini-css-extract-plugin
 ```
+
+```js
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+module.exports = {
+	plugins: [new MiniCssExtractPlugin()],
+	module: {
+		rules: [
+			{
+				test: /\.css$/i,
+				use: [MiniCssExtractPlugin.loader, 'css-loader'],
+			},
+		],
+	},
+};
+```
+
+### file-loader
+
+透過進入點 JS import/require() 解析 file 後複製到 output
+
+`npm install file-loader --save-dev`
+
+撰寫正則驗證檔案類型可被搬運
+
+```js
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+			options:{
+				name: '[path][name].[ext]', // 原檔案資料夾結構、名稱、副檔名完全相同的進行產出
+			}
+          },
+        ],
+      },
+    ],
+  },
+};
+```
+
+## Reference
+
+- [webpack 文件](https://webpack.js.org/guides/getting-started/)
+- [Loaders 一覽表](https://webpack.js.org/loaders/)
+- [Plugins 一覽表](https://webpack.js.org/plugins/)
