@@ -40,7 +40,6 @@ module.exports = {
 						'https://github.com/albertnotes/docusaurus-blog/edit/master/',
 					postsPerPage: 5,
 					blogSidebarCount: 'ALL',
-					blogSidebarTitle: 'All our posts',
 				},
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
