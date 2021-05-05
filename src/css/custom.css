@@ -47,6 +47,10 @@ html[data-theme='dark'] .header-github-link:before {
 		no-repeat;
 }
 
+.footer {
+	font-size: 14px;
+}
+
 .footer--dark {
 	--ifm-footer-background-color: #2b3137;
 }

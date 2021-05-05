@@ -1,5 +1,5 @@
 module.exports = {
-	title: 'AlbertNotes',
+	title: "Albert's Blog",
 	tagline: '',
 	url: 'https://albertnotes.github.io/',
 	baseUrl: '/docusaurus-blog/',
@@ -67,7 +67,7 @@ module.exports = {
 		// },
 		navbar: {
 			hideOnScroll: false,
-			title: 'AlbertNotes',
+			title: "Albert's Blog",
 			logo: {
 				alt: 'My Site Logo',
 				src: 'img/logo.svg',
@@ -86,24 +86,24 @@ module.exports = {
 		footer: {
 			style: 'light',
 			links: [
-				{
-					title: 'Docs',
-					items: [
-						{
-							label: 'Style Guide',
-							to: '/docs/markdown/style-guide',
-						},
-					],
-				},
-				{
-					title: 'Community',
-					items: [
-						{
-							label: 'GitHub',
-							href: 'https://github.com/albertnotes',
-						},
-					],
-				},
+				// {
+				// 	title: 'Docs',
+				// 	items: [
+				// 		{
+				// 			label: 'Style Guide',
+				// 			to: '/docs/markdown/style-guide',
+				// 		},
+				// 	],
+				// },
+				// {
+				// 	title: 'Community',
+				// 	items: [
+				// 		{
+				// 			label: 'GitHub',
+				// 			href: 'https://github.com/albertnotes',
+				// 		},
+				// 	],
+				// },
 			],
 			copyright: `Copyright © ${new Date().getFullYear()} Albert,  Built with Docusaurus.`,
 		},

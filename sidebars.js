@@ -1,6 +1,7 @@
 module.exports = {
 	someSidebar: {
-		webpack: ['webpack/webpack-part1'],
-		tailwind: ['tailwindcss/tailwindcss-part1'],
+		tool: ['tool/webpack'],
+		css: ['css/tailwind'],
+		shell: ['shell/windows'],
 	},
 };

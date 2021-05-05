@@ -1,7 +1,7 @@
 ---
-id: webpack-part1
-title: Webpack 基礎
-sidebar_label: 基礎
+id: webpack
+title: '[模組] webpack'
+sidebar_label: '[模組] webpack'
 slug: /
 ---
 
