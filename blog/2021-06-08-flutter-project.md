@@ -1,6 +1,6 @@
 ---
 slug: 2021/06/08/flutter-ui
-title: Flutter-UI From The Flutter Way
+title: Flutter-UI
 author: Albert
 author_title: Front End Engineer
 author_url: https://github.com/Albertnotes
@@ -10,12 +10,14 @@ tags: [flutter]
 
 [The Flutter Way 版面參考來源 ](https://youtu.be/LN668OAUrK4)
 
+<!--truncate-->
+
 ## 佈局
 
 1. 集中 App 切版的常數，與 Web 佈局概念相似
 2. 建立一個 lib/constants.dart 存放顏色、間距等數據
 
-```js
+```
 import 'package:flutter/material.dart';
 ```
 
