@@ -1,8 +1,8 @@
 ---
-id: windows
+id: ae2c572d-c5e9-49b6-9daa-450424eb33d4
 title: '[指令] windows'
 sidebar_label: '[指令] windows'
-slug: /shell/windows
+slug: /shell/ae2c572d-c5e9-49b6-9daa-450424eb33d4
 ---
 
 ## xcopy

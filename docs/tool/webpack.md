@@ -1,5 +1,5 @@
 ---
-id: webpack
+id: 04777850-69f0-49e9-867d-914199cf60e7
 title: '[模組] webpack'
 sidebar_label: '[模組] webpack'
 slug: /

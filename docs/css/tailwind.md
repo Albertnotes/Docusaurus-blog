@@ -1,8 +1,8 @@
 ---
-id: tailwind
+id: 45ccf4c1-5b1e-4a0c-8e0b-f28dca0e25a3
 title: '[框架] tailwind'
 sidebar_label: '[框架] tailwind'
-slug: /css/tailwind
+slug: /css/45ccf4c1-5b1e-4a0c-8e0b-f28dca0e25a3
 ---
 
 ## 環境
