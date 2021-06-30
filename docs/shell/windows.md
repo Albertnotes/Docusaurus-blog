@@ -10,11 +10,11 @@ slug: /shell/ae2c572d-c5e9-49b6-9daa-450424eb33d4
 ### 多路徑 for 搭配 xcopy
 
 ```sh
-for %a in (
+for /f %%a in (
     "C:\Program Files\Microsoft SQL Server\MSSQL.1\MSSQL\Data\city2.mdf"
     "C:\Program Files\Microsoft SQL Server\MSSQL.1\MSSQL\Data\city2_log.ldf"
     ) do (
-        xcopy /s /d "%a" "\\SUD107DB2\DBData"
+        xcopy /s /d "%%~a" "\\SUD107DB2\DBData"
     )
 ```
 
