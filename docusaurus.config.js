@@ -73,6 +73,7 @@ module.exports = {
 			},
 			items: [
 				{ to: '/tags', label: 'Tags', position: 'left' },
+				{ to: '/archive', label: 'Archive', position: 'left' },
 				{ to: '/docs', label: 'Docs', position: 'left' },
 				{
 					href: 'https://github.com/albertnotes/docusaurus-blog',
