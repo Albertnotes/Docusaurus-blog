@@ -1,14 +1,36 @@
 {
-	"md-create-page": {
-		"prefix": "md-create-page",
-		"body": ["---", "id: ", "title: ", "sidebar_label: ", "slug: ", "---"],
-		"description": "md-create-page"
+	"md-create-docs-page": {
+		"prefix": "md-create-docs-page",
+		"body": [
+			"---",
+			"id: 45ccf4c1-5b1e-4a0c-8e0b-f28dca0e25a3",
+			"title: '[框架] tailwind'",
+			"sidebar_label: '[框架] tailwind'",
+			"slug: /css/45ccf4c1-5b1e-4a0c-8e0b-f28dca0e25a3",
+			"---"
+		],
+		"description": "md-create-docs-page"
 	},
 	"md-break-important": {
 		"prefix": "md-break-important",
 		"body": [":::important", "", ":::"],
 		"description": "md-break-important"
 	},
+	"md-create-blog-page": {
+		"prefix": "md-create-blog-page",
+		"body": [
+			"---",
+			"slug: 2020/09/17/ssh-key",
+			"title: ssh-key 指令產生",
+			"author: Albert",
+			"author_title: Front End Engineer",
+			"author_url: https://github.com/Albertnotes",
+			"author_image_url: https://avatars.githubusercontent.com/u/57343359?s=460&u=196d3b133abafbd8294ac0cfb8713961291bb1a3&v=4",
+			"tags: [ssh-key]",
+			"---"
+		],
+		"description": "md-create-blog-page"
+	}
 	"md-break-note": {
 		"prefix": "md-break-note",
 		"body": [":::note", "", ":::"],

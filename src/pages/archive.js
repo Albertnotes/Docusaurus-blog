@@ -68,8 +68,6 @@ function Year(
 }
 
 function BlogArchive() {
-	console.log('yearsOfPosts :>> ', yearsOfPosts);
-	console.log('postTotal :>> ', postTotal);
 	return (
 		<Layout title='Blog Archive'>
 			<header className={clsx('hero hero--primary', styles.heroBanner)}>
