@@ -8,7 +8,6 @@ module.exports = {
 	favicon: 'img/favicon.ico',
 	organizationName: 'albertnotes', // Usually your GitHub org/user name.
 	projectName: 'docusaurus-blog', // Usually your repo name.
-	themes: ['@docusaurus/theme-live-codeblock'],
 	plugins: [
 		[
 			'@docusaurus/plugin-client-redirects',
@@ -74,7 +73,7 @@ module.exports = {
 			items: [
 				{ to: '/tags', label: 'Tags', position: 'left' },
 				{ to: '/archive', label: 'Archive', position: 'left' },
-				{ to: '/docs', label: 'Docs', position: 'left' },
+				// { to: '/docs', label: 'Docs', position: 'left' },
 				{
 					href: 'https://github.com/albertnotes/docusaurus-blog',
 					position: 'right',

@@ -30,7 +30,7 @@
 			"---"
 		],
 		"description": "md-create-blog-page"
-	}
+	},
 	"md-break-note": {
 		"prefix": "md-break-note",
 		"body": [":::note", "", ":::"],
